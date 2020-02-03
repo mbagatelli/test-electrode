@@ -53,7 +53,7 @@ class Home extends React.Component {
 
         <section styleName="custom.header">
           <h2>
-            <span>Hello from </span>
+            <span>Hello from yeap</span>
             <a href="https://github.com/electrode-io">
               {"Electrode"}
               <img src={electrodePng} />
@@ -87,9 +87,8 @@ class Home extends React.Component {
         </div>
 
         <div styleName="custom.docs-section">
-          <DemoDynamicImport/>
+          <DemoDynamicImport />
         </div>
-
       </div>
     );
   }
@@ -99,7 +98,4 @@ Home.propTypes = {};
 
 const mapStateToProps = state => state;
 
-export default connect(
-  mapStateToProps,
-  dispatch => ({ dispatch })
-)(Home);
+export default connect(mapStateToProps, dispatch => ({ dispatch }))(Home);
